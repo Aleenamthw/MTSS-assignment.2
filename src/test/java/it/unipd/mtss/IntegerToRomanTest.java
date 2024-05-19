@@ -12,257 +12,132 @@ import org.junit.Test;
 public class IntegerToRomanTest {
 
     @Test
-    public void testConvert1() {
-        try {
-            assertEquals("I", IntegerToRoman.convert(1));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert1() throws Exception {
+        assertEquals("I", IntegerToRoman.convert(1));
+    }
+
+    @Test
+    public void testConvert4() throws Exception {
+        assertEquals("IV", IntegerToRoman.convert(4));
 
     }
 
     @Test
-    public void testConvert4() {
-        try {
-            assertEquals("IV", IntegerToRoman.convert(4));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert5() throws Exception {
+        assertEquals("V", IntegerToRoman.convert(5));
+    }
+
+    @Test
+    public void testConvert6() throws Exception {
+        assertEquals("VI", IntegerToRoman.convert(6));
 
     }
 
     @Test
-    public void testConvert5() {
-        try {
-            assertEquals("V", IntegerToRoman.convert(5));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
-    }
-
-    @Test
-    public void testConvert6() {
-        try {
-
-            assertEquals("VI", IntegerToRoman.convert(6));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
-    }
-
-    @Test
-    public void testConvert9() {
-
-        try {
-
-            assertEquals("IX", IntegerToRoman.convert(9));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert9() throws Exception {
+        assertEquals("IX", IntegerToRoman.convert(9));
 
     }
 
     @Test
-    public void testConvert10() {
-        try {
-
-            assertEquals("X", IntegerToRoman.convert(10));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert10() throws Exception {
+        assertEquals("X", IntegerToRoman.convert(10));
     }
 
     @Test
-    public void testConvert11() {
-        try {
-
-            assertEquals("XI", IntegerToRoman.convert(11));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert11() throws Exception {
+        assertEquals("XI", IntegerToRoman.convert(11));
     }
 
     @Test
-    public void testConvert14() {
-        try {
-
-            assertEquals("XIV", IntegerToRoman.convert(14));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert14() throws Exception {
+        assertEquals("XIV", IntegerToRoman.convert(14));
     }
 
     @Test
-    public void testConvert15() {
-
-        try {
-
-            assertEquals("XV", IntegerToRoman.convert(15));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert15() throws Exception {
+        assertEquals("XV", IntegerToRoman.convert(15));
 
     }
 
     @Test
-    public void testConvert19() {
-        try {
-
-            assertEquals("XIX", IntegerToRoman.convert(19));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert19() throws Exception {
+        assertEquals("XIX", IntegerToRoman.convert(19));
     }
 
     @Test
-    public void testConvert20() {
-        try {
-
-            assertEquals("XX", IntegerToRoman.convert(20));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert20() throws Exception {
+        assertEquals("XX", IntegerToRoman.convert(20));
     }
 
     @Test
-    public void testConvert50() {
-        try {
-
-            assertEquals("L", IntegerToRoman.convert(50));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert50() throws Exception {
+        assertEquals("L", IntegerToRoman.convert(50));
     }
 
     @Test
-    public void testConvert100() {
-        try {
-
-            assertEquals("C", IntegerToRoman.convert(100));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert100() throws Exception {
+        assertEquals("C", IntegerToRoman.convert(100));
     }
 
     @Test
-    public void testConvert500() {
-        try {
-
-            assertEquals("D", IntegerToRoman.convert(500));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert500() throws Exception {
+        assertEquals("D", IntegerToRoman.convert(500));
     }
 
     @Test
-    public void testConvert1000() {
-        try {
-
-            assertEquals("M", IntegerToRoman.convert(1000));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert1000() throws Exception {
+        assertEquals("M", IntegerToRoman.convert(1000));
     }
 
     @Test
-    public void testConvert999() {
-        try {
-
-            assertEquals("CMXCIX", IntegerToRoman.convert(999));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert999() throws Exception {
+        assertEquals("CMXCIX", IntegerToRoman.convert(999));
     }
 
     @Test
-    public void testConvert40() {
-        try {
-
-            assertEquals("XL", IntegerToRoman.convert(40));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert40() throws Exception {
+        assertEquals("XL", IntegerToRoman.convert(40));
     }
 
     @Test
-    public void testConvert900() {
-        try {
-
-            assertEquals("CM", IntegerToRoman.convert(900));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert900() throws Exception {
+        assertEquals("CM", IntegerToRoman.convert(900));
     }
 
     @Test
-    public void testConvert39() {
-        try {
-
-            assertEquals("XXXIX", IntegerToRoman.convert(39));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert39() throws Exception {
+        assertEquals("XXXIX", IntegerToRoman.convert(39));
     }
 
     @Test
-    public void testConvert499() {
-        try {
-
-            assertEquals("CDXCIX", IntegerToRoman.convert(499));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert499() throws Exception {
+        assertEquals("CDXCIX", IntegerToRoman.convert(499));
     }
 
     @Test
-    public void testConvert3() {
-
-        try {
-
-            assertEquals("III", IntegerToRoman.convert(3));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert3() throws Exception {
+        assertEquals("III", IntegerToRoman.convert(3));
     }
 
     @Test
-    public void testConvert8() {
-        try {
-
-            assertEquals("VIII", IntegerToRoman.convert(8));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert8() throws Exception {
+        assertEquals("VIII", IntegerToRoman.convert(8));
     }
 
     @Test
-    public void testConvert12() {
-        try {
-
-            assertEquals("XII", IntegerToRoman.convert(12));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    public void testConvert12() throws Exception {
+        assertEquals("XII", IntegerToRoman.convert(12));
     }
 
-    @Test
-    public void convertZero() {
-        try {
-
-            assertEquals("", IntegerToRoman.convert(0));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    @Test(expected = java.lang.Exception.class)
+    public void convertZero() throws Exception {
+        IntegerToRoman.convert(0);
     }
 
-    @Test
-    public void convertBelowZero() {
-        try {
-
-            assertEquals("", IntegerToRoman.convert(-1));
-        } catch (Exception e) {
-            System.err.println(e);
-        }
+    @Test(expected = java.lang.Exception.class)
+    public void convertBelowZero() throws Exception {
+        IntegerToRoman.convert(-1);
     }
 
 }
